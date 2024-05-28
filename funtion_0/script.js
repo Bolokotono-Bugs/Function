@@ -20,6 +20,9 @@ function showBarang() {
 function addBarang() {
     var input = document.querySelector("input[name='barang']");
     dataBarang.push(input.value);
+    if (input.value == "") {
+        alert("Inputan tidak boleh kosong");
+    }
     showBarang();
 }
 function editBarang(id) {
